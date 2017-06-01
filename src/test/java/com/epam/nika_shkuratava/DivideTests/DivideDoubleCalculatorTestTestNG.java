@@ -19,6 +19,7 @@ public class DivideDoubleCalculatorTestTestNG extends BaseCalculatorTestTestNG{
                     {0d, 0d, NaN},
                     {5d, 2d, 2.5d},
                     {-4d, -2d, 2d},
+                    {5.0d, 0.0d, Double.POSITIVE_INFINITY},
                     {3.5d, 1.5d, 2.3333333333333335d}
             };
         }
@@ -27,10 +28,5 @@ public class DivideDoubleCalculatorTestTestNG extends BaseCalculatorTestTestNG{
         public void checkDoubleDiv(double a, double b, double expectedResult) {
             double result = calculator.div(a, b);
             Assert.assertEquals(expectedResult, result);
-        }
-
-        @Test
-        public void checkDoubleDivByZero() {
-            double result = calculator.div(5.0d, 0d);
         }
     }
