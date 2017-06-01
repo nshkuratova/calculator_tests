@@ -6,13 +6,12 @@ import org.testng.annotations.BeforeClass;
 /**
  * Created by Nika_Shkuratava on 5/30/2017.
  */
-public abstract class BaseCalculatorTest {
+public abstract class BaseCalculatorTestTestNG {
 
     protected Calculator calculator;
 
     @BeforeClass
     public void setUp(){
-        //System.out.println("Prepare instance of calculator");
         calculator = new Calculator();
 
     }
