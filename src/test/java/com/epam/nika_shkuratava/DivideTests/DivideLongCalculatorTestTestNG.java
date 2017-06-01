@@ -16,21 +16,20 @@ public class DivideLongCalculatorTestTestNG extends BaseCalculatorTestTestNG {
     public Object[][] divLongDataProvider() {
         return new Object[][]{
                 {8l, 8l, 1l},
-                {0l, 0l, NaN},
-                {5l, 2l, 2.5d},
+                {5l, 2l, 2l},
                 {-4l, -2l, 2l},
                 {Long.MAX_VALUE, Long.MAX_VALUE, 1}
         };
     }
 
     @Test(dataProvider = "calculatorDivLongDataProvider")
-    public void checkDoubleDiv(double a, double b, double expectedResult) {
-        double result = calculator.div(a, b);
+    public void checkDoubleDiv(long a, long b, long expectedResult) {
+        long result = calculator.div(a, b);
         Assert.assertEquals(expectedResult, result);
     }
 
     @Test  (expectedExceptions = NumberFormatException.class, expectedExceptionsMessageRegExp ="Attempt to divide by zero")
     public void checkDoubleDivByZero() {
-        double result = calculator.div(1, 0);
+        long result = calculator.div(1, 0);
     }
 }
