@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 /**
  * Created by nika.shkuratova on 01.06.2017.
  */
-public class SumDoubleCalculatorTests extends BaseCalculatorTestTestNG {
+public class SumDoubleCalculatorTestTestNG extends BaseCalculatorTestTestNG {
 
     @DataProvider(name = "calculatorSumDoubleDataProvider")
     public Object[][] sumDoubleDataProvider() {
