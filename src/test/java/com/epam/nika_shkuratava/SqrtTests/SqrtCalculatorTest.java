@@ -11,9 +11,10 @@ import org.testng.annotations.Test;
 public class SqrtCalculatorTest extends BaseCalculatorTestTestNG {
 
     @DataProvider(name = "calculatorSqrtDataProvider")
-    public Object[][] sumDoubleDataProvider() {
+    public Object[][] DataProvider() {
         return new Object[][]{
-                {4d, 2d}
+                {4d, 2d},
+                {5.005d, 2.237d}
         };
     }
 

@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 /**
  * Created by nika.shkuratova on 01.06.2017.
  */
-public class DivideLongCalculatorTestTestNG extends BaseCalculatorTestTestNG {
+public class DivideLongCalculatorTest extends BaseCalculatorTestTestNG {
 
     @DataProvider(name = "calculatorDivLongDataProvider")
     public Object[][] divLongDataProvider() {

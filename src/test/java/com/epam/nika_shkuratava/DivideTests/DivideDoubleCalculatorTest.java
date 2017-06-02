@@ -10,7 +10,7 @@ import static java.lang.Double.NaN;
 /**
  * Created by nika.shkuratova on 01.06.2017.
  */
-public class DivideDoubleCalculatorTestTestNG extends BaseCalculatorTestTestNG {
+public class DivideDoubleCalculatorTest extends BaseCalculatorTestTestNG {
 
     @DataProvider(name = "calculatorDivDoubleDataProvider")
     public Object[][] divDoubleDataProvider() {

@@ -3,20 +3,20 @@
 <suite name="BsicRegression" verbose="1">
     <test name="Check sum">
         <classes>
-            <class name="com.epam.nika_shkuratava.SumTests.SumLongCalculatorTestTestNG"/>
-            <class name="com.epam.nika_shkuratava.SumTests.SumDoubleCalculatorTestTestNG"/>
+            <class name="com.epam.nika_shkuratava.SumTests.SumLongCalculatorTest"/>
+            <class name="com.epam.nika_shkuratava.SumTests.SumDoubleCalculatorTest"/>
         </classes>
     </test>
     <test name="Check division">
         <classes>
-            <class name="com.epam.nika_shkuratava.DivideTests.DivideDoubleCalculatorTestTestNG"/>
-            <class name="com.epam.nika_shkuratava.DivideTests.DivideLongCalculatorTestTestNG"/>
+            <class name="com.epam.nika_shkuratava.DivideTests.DivideDoubleCalculatorTest"/>
+            <class name="com.epam.nika_shkuratava.DivideTests.DivideLongCalculatorTest"/>
         </classes>
     </test>
     <test name="Check substraction">
         <classes>
-            <class name="com.epam.nika_shkuratava.SubstractionTests.SubDoubleCalculatorTestTestNG"/>
-            <class name="com.epam.nika_shkuratava.SubstractionTests.SubLongCalculatorTestTestNG"/>
+            <class name="com.epam.nika_shkuratava.SubstractionTests.SubDoubleCalculatorTest"/>
+            <class name="com.epam.nika_shkuratava.SubstractionTests.SubLongCalculatorTest"/>
         </classes>
     </test>
 </suite>

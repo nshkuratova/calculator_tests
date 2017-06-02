@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 public class PowCalculatorTest extends BaseCalculatorTestTestNG {
 
     @DataProvider(name = "calculatorPowDataProvider")
-    public Object[][] sumDoubleDataProvider() {
+    public Object[][] DataProvider() {
         return new Object[][]{
                 {1d, 2d, 1d},
                 {0.5d, 5d, 0.03125d},
