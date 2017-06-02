@@ -28,6 +28,6 @@ public class DivideLongCalculatorTestTestNG extends BaseCalculatorTestTestNG {
 
     @Test(expectedExceptions = NumberFormatException.class, expectedExceptionsMessageRegExp = "Attempt to divide by zero")
     public void checkDoubleDivByZero() {
-        long result = calculator.div(1, 0);
+        calculator.div(1, 0);
     }
 }
