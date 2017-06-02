@@ -17,6 +17,7 @@ public class SubLongCalculatorTestTestNG extends BaseCalculatorTestTestNG {
                 {0, 0, 0},
                 {3, 2, 1},
                 {Long.MAX_VALUE, Long.MIN_VALUE, -1},
+                {Long.MAX_VALUE, Long.MAX_VALUE, 0},
                 {-2, -3, 1}
 
         };

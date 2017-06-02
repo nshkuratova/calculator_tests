@@ -17,6 +17,7 @@ public class SubDoubleCalculatorTestTestNG extends BaseCalculatorTestTestNG {
                 {0.0, 0.0, 0.0},
                 {2.0d, 3.0d, -1.0d},
                 {Double.MAX_VALUE, Double.MIN_VALUE, 1.7976931348623157E308},
+                {Double.MAX_VALUE + 1, Double.MAX_VALUE + 1, 0},
                 {-2.0, -3.0, 1.0}
 
         };

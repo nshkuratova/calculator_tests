@@ -5,8 +5,6 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import static java.lang.Double.NaN;
-
 /**
  * Created by nika.shkuratova on 01.06.2017.
  */
@@ -28,7 +26,7 @@ public class DivideLongCalculatorTestTestNG extends BaseCalculatorTestTestNG {
         Assert.assertEquals(expectedResult, result);
     }
 
-    @Test  (expectedExceptions = NumberFormatException.class, expectedExceptionsMessageRegExp ="Attempt to divide by zero")
+    @Test(expectedExceptions = NumberFormatException.class, expectedExceptionsMessageRegExp = "Attempt to divide by zero")
     public void checkDoubleDivByZero() {
         long result = calculator.div(1, 0);
     }

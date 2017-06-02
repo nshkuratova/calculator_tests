@@ -11,7 +11,7 @@ public abstract class BaseCalculatorTestTestNG {
     protected Calculator calculator;
 
     @BeforeClass
-    public void setUp(){
+    public void setUp() {
         calculator = new Calculator();
 
     }

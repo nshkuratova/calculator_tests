@@ -1,22 +1,22 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="BsicRegression" verbose="1" >
-    <test name="Check sum" >
+<suite name="BsicRegression" verbose="1">
+    <test name="Check sum">
         <classes>
-            <class name="com.epam.nika_shkuratava.SumTests.SumLongCalculatorTestTestNG" />
-            <class name="com.epam.nika_shkuratava.SumTests.SumDoubleCalculatorTestTestNG" />
+            <class name="com.epam.nika_shkuratava.SumTests.SumLongCalculatorTestTestNG"/>
+            <class name="com.epam.nika_shkuratava.SumTests.SumDoubleCalculatorTestTestNG"/>
         </classes>
     </test>
-    <test name="Check division" >
+    <test name="Check division">
         <classes>
-            <class name="com.epam.nika_shkuratava.DivideTests.DivideDoubleCalculatorTestTestNG" />
-            <class name="com.epam.nika_shkuratava.DivideTests.DivideLongCalculatorTestTestNG" />
+            <class name="com.epam.nika_shkuratava.DivideTests.DivideDoubleCalculatorTestTestNG"/>
+            <class name="com.epam.nika_shkuratava.DivideTests.DivideLongCalculatorTestTestNG"/>
         </classes>
     </test>
-    <test name="Check substraction" >
+    <test name="Check substraction">
         <classes>
-            <class name="com.epam.nika_shkuratava.SubstractionTests.SubDoubleCalculatorTestTestNG" />
-            <class name="com.epam.nika_shkuratava.SubstractionTests.SubLongCalculatorTestTestNG" />
+            <class name="com.epam.nika_shkuratava.SubstractionTests.SubDoubleCalculatorTestTestNG"/>
+            <class name="com.epam.nika_shkuratava.SubstractionTests.SubLongCalculatorTestTestNG"/>
         </classes>
     </test>
 </suite>
