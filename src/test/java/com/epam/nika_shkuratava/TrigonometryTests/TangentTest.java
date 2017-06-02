@@ -13,7 +13,7 @@ public class TangentTest extends BaseCalculatorTestTestNG {
     @DataProvider(name = "calculatorTangentDataProvider")
     public Object[][] DataProvider() {
         return new Object[][]{
-                {0d, 0},
+                {0d, 0d},
                 {30d, -6.405d},
                 {45d, 1.619d},
                 {60d, 0.32d},
@@ -22,7 +22,7 @@ public class TangentTest extends BaseCalculatorTestTestNG {
     }
 
     @Test(dataProvider = "calculatorTangentDataProvider")
-    public void checkCotangent(double a, double expectedResult) {
+    public void checkTangent(double a, double expectedResult) {
         double result = calculator.tg(a);
         Assert.assertEquals(result, expectedResult);
         Assert.assertTrue(Math.abs(result - expectedResult) < 0.1);
