@@ -1,4 +1,4 @@
-package com.epam.nika_shkuratava.MultiplyTests;
+package com.epam.nika_shkuratava.MultiplyTests_JUnit;
 
 import com.epam.nika_shkuratava.BaseCalculatorTestJUnit;
 import org.junit.Test;
@@ -8,7 +8,6 @@ import org.junit.runners.Parameterized;
 import java.util.Arrays;
 import java.util.Collection;
 
-import static javafx.scene.input.KeyCode.L;
 import static org.junit.Assert.assertEquals;
 
 /**

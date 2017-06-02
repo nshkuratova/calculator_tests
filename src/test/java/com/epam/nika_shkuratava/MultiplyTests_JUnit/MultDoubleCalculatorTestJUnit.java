@@ -1,4 +1,4 @@
-package com.epam.nika_shkuratava.MultiplyTests;
+package com.epam.nika_shkuratava.MultiplyTests_JUnit;
 
 import com.epam.nika_shkuratava.BaseCalculatorTestJUnit;
 import org.junit.Test;
