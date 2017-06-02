@@ -5,5 +5,5 @@ import com.epam.nika_shkuratava.BaseCalculatorTestTestNG;
 /**
  * Created by Nika_Shkuratava on 6/2/2017.
  */
-public class TangentTest extends BaseCalculatorTestTestNG {
+public class CosineTest extends BaseCalculatorTestTestNG {
 }
