@@ -1,6 +1,7 @@
 package com.epam.nika_shkuratava;
 
 import com.epam.tat.module4.Calculator;
+import org.testng.ITestContext;
 import org.testng.annotations.*;
 
 /**
@@ -16,8 +17,10 @@ public abstract class BaseCalculatorTestTestNG {
     }
 
     @BeforeClass (alwaysRun = true)
-    public void setUp() {
+    public void setUp(final ITestContext testContext) {
         calculator = new Calculator();
+        System.out.println("=========================");
+        System.out.println("Test class - " + testContext.getName());
 
     }
 
