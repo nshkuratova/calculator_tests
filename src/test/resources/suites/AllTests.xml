@@ -1,0 +1,42 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="All" verbose="1">
+    <test name="Check sum">
+        <classes>
+            <class name="com.epam.nika_shkuratava.SumTests.SumLongCalculatorTest"/>
+            <class name="com.epam.nika_shkuratava.SumTests.SumDoubleCalculatorTest"/>
+        </classes>
+    </test>
+    <test name="Check division">
+        <classes>
+            <class name="com.epam.nika_shkuratava.DivideTests.DivideDoubleCalculatorTest"/>
+            <class name="com.epam.nika_shkuratava.DivideTests.DivideLongCalculatorTest"/>
+        </classes>
+    </test>
+    <test name="Check substraction">
+        <classes>
+            <class name="com.epam.nika_shkuratava.SubstractionTests.SubDoubleCalculatorTest"/>
+            <class name="com.epam.nika_shkuratava.SubstractionTests.SubLongCalculatorTest"/>
+        </classes>
+    </test>
+    <test name="Check pow">
+        <classes>
+            <class name="com.epam.nika_shkuratava.PowTests.PowCalculatorTest">
+            </class>
+        </classes>
+    </test>
+    <test name="Check sqrt">
+        <classes>
+            <class name="com.epam.nika_shkuratava.SqrtTests.SqrtCalculatorTest">
+            </class>
+        </classes>
+    </test>
+    <test name="Check trigonometric functions">
+        <classes>
+            <class name="com.epam.nika_shkuratava.TrigonometryTests.CosineTest"/>
+            <class name="com.epam.nika_shkuratava.TrigonometryTests.SineTest"/>
+            <class name="com.epam.nika_shkuratava.TrigonometryTests.CotangentTest"/>
+            <class name="com.epam.nika_shkuratava.TrigonometryTests.TangentTest"/>
+        </classes>
+    </test>
+</suite>

@@ -21,7 +21,7 @@ public class SqrtCalculatorTest extends BaseCalculatorTestTestNG {
     @Test(dataProvider = "calculatorSqrtDataProvider", groups = "extendedRegression")
     public void checkSqrt(double a, double expectedResult) {
         double result = calculator.sqrt(a);
-        Assert.assertEquals(result, expectedResult);
+        Assert.assertTrue(Math.abs(result - expectedResult) < 0.01);
     }
 
     //todo Change the test to specify the exception type after the fix of the bug NNNN-23)

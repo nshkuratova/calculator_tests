@@ -24,6 +24,7 @@ public class TangentTest extends BaseCalculatorTestTestNG {
     @Test(dataProvider = "calculatorTangentDataProvider")
     public void checkTangent(double a, double expectedResult) {
         double result = calculator.tg(a);
+        Assert.assertEquals(result, expectedResult);
         Assert.assertTrue(Math.abs(result - expectedResult) < 0.1);
     }
 }
