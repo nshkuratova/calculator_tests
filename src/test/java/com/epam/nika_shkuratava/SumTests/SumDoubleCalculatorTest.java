@@ -23,7 +23,7 @@ public class SumDoubleCalculatorTest extends BaseCalculatorTestTestNG {
         };
     }
 
-    @Test(dataProvider = "calculatorSumDoubleDataProvider")
+    @Test(dataProvider = "calculatorSumDoubleDataProvider", groups = "basicRegression")
     public void checkDoubleSum(double a, double b, double expectedResult) {
         double result = calculator.sum(a, b);
         Assert.assertEquals(result, expectedResult);

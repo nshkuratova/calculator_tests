@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="GroupTests">
+   <test name="regression">
+       <groups>
+           <run>
+               <include name="basicRegression"></include>
+           </run>
+       </groups>
+       <classes>
+           <class name="com.epam.nika_shkuratava.DivideTests.DivideDoubleCalculatorTest"></class>
+           <class name="com.epam.nika_shkuratava.DivideTests.DivideLongCalculatorTest"></class>
+           <class name="com.epam.nika_shkuratava.SubstractionTests.SubDoubleCalculatorTest"></class>
+           <class name="com.epam.nika_shkuratava.SubstractionTests.SubLongCalculatorTest"></class>
+           <class name="com.epam.nika_shkuratava.SumTests.SumDoubleCalculatorTest"></class>
+           <class name="com.epam.nika_shkuratava.SumTests.SumLongCalculatorTest"></class>
+       </classes>
+   </test>
+</suite>

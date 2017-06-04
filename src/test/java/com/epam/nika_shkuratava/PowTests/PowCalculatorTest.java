@@ -20,7 +20,7 @@ public class PowCalculatorTest extends BaseCalculatorTestTestNG {
         };
     }
 
-    @Test(dataProvider = "calculatorPowDataProvider")
+    @Test(dataProvider = "calculatorPowDataProvider", groups = "extendedRegression")
     public void checkPow(double a, double b, double expectedResult) {
         double result = calculator.pow(a, b);
         Assert.assertEquals(result, expectedResult);

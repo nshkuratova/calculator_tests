@@ -15,7 +15,7 @@ public abstract class BaseCalculatorTestTestNG {
         System.out.println("@BeforeGroups");
     }
 
-    @BeforeClass
+    @BeforeClass (alwaysRun = true)
     public void setUp() {
         calculator = new Calculator();
 

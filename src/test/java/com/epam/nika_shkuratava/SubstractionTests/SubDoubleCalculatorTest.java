@@ -23,7 +23,7 @@ public class SubDoubleCalculatorTest extends BaseCalculatorTestTestNG {
         };
     }
 
-    @Test(dataProvider = "calculatorSubDoubleDataProvider")
+    @Test(dataProvider = "calculatorSubDoubleDataProvider", groups = "basicRegression")
     public void checkDoubleSum(double a, double b, double expectedResult) {
         double result = calculator.sub(a, b);
         Assert.assertTrue(Math.abs(result - expectedResult) < 0.00001);

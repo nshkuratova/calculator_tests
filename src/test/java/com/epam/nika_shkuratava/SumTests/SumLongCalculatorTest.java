@@ -23,7 +23,7 @@ public class SumLongCalculatorTest extends BaseCalculatorTestTestNG {
         };
     }
 
-    @Test(dataProvider = "calculatorSumLongDataProvider")
+    @Test(dataProvider = "calculatorSumLongDataProvider", groups = "basicRegression")
     public void checkLongSum(long a, long b, long expectedResult) {
         long result = calculator.sum(a, b);
         Assert.assertEquals(result, expectedResult);

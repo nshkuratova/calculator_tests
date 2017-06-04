@@ -24,7 +24,7 @@ public class DivideDoubleCalculatorTest extends BaseCalculatorTestTestNG {
         };
     }
 
-    @Test(dataProvider = "calculatorDivDoubleDataProvider")
+    @Test(dataProvider = "calculatorDivDoubleDataProvider", groups = "basicRegression")
     public void checkDoubleDiv(double a, double b, double expectedResult) {
         double result = calculator.div(a, b);
         Assert.assertEquals(expectedResult, result);

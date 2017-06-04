@@ -20,7 +20,7 @@ public class DivideLongCalculatorTest extends BaseCalculatorTestTestNG {
         };
     }
 
-    @Test(dataProvider = "calculatorDivLongDataProvider")
+    @Test(dataProvider = "calculatorDivLongDataProvider", groups = "basicRegression")
     public void checkDoubleDiv(long a, long b, long expectedResult) {
         long result = calculator.div(a, b);
         Assert.assertEquals(expectedResult, result);
